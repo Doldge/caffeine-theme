@@ -11,14 +11,17 @@
 You can check out the theme in action on my official blog [Caffeine Coding](https://www.caffeinecoding.com)
 
 
-## Ghost Version Spport
-This theme has been upgraded to v3.0 to support the latest version of `Ghost v1.*`. If you are still on `Ghost v0.11.*`, you can download [Caffeine Theme v2.9.0](https://github.com/kelyvin/caffeine-theme/releases/tag/v2.9.0) release.
+## Ghost Versions Support
+This theme has been upgraded to `v4.0.0` to support the latest version of `Ghost v2.*`. If you still need theme support for `Ghost v1.*`, you can download the [Caffeine Theme v3.0.6](https://github.com/kelyvin/caffeine-theme/releases/tag/v3.0.6) release. If you are still on `Ghost v0.11.*`, you can download [Caffeine Theme v2.9.0](https://github.com/kelyvin/caffeine-theme/releases/tag/v2.9.0) release.
+
+**Note**: because this theme maintains a certain style, you will not be able to take advantage of the [Image Size Options](https://themes.ghost.org/docs/ghost-editor#section-image-size-options) of Ghost v2. If you'd like to have more image sizing options, please provide a potential solution (that works well with the design) and make a pull request.
 
 ### Table of Contents
 
 * [Theme Features](#theme-features)
 * [Installation](#installation)
 * [Customizations](#customizations)
+    * [Number of Posts](#number-of-posts) 
     * [Header Icon](#header-icon)
     * [Favicons](#favicons)
     * [Tags Overlay](#tags-overlay)
@@ -104,6 +107,15 @@ As mentioned earlier, this theme is very easily configurable to suit your needs.
 
 ### General Settings
 Make sure to set up some of your default settings within your Ghost Admin panel → `General`. By setting your blog title, description, cover, logo, and posts per page, you will be able to maximize the capabilities of this theme.
+
+### Number of Posts
+With ghost migrating to v1, to set the number of posts per page, you'll have to configure a file within the theme directly. The configuration is set within the `package.json`. To adjust it, you'll need to modify the following:
+
+```javascript
+"config": {
+    "posts_per_page": 6
+}
+```
 
 ### Header icon
 
